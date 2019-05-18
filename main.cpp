@@ -106,67 +106,41 @@ int main()
 
   // sort arrays and track times
 
-  double QuickSortStartTime = clock() / (double) CLOCKS_PER_SEC;
+  double QuickSortStartTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
   QuickSort(a, 0, size);
-  double QuickSortEndTime = clock() / (double) CLOCKS_PER_SEC;
+  double QuickSortEndTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
 
-  double InsertionSortStartTime = clock() / (double) CLOCKS_PER_SEC;
+  double InsertionSortStartTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
   InsertionSort(b, size);
-  double InsertionSortEndTime = clock() / (double) CLOCKS_PER_SEC;
+  double InsertionSortEndTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
 
-  double BubbleSortStartTime = clock() / (double) CLOCKS_PER_SEC;
+  double BubbleSortStartTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
   BubbleSort(c, size);
-  double BubbleSortEndTime = clock() / (double) CLOCKS_PER_SEC;
+  double BubbleSortEndTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
 
-  double SelectionSortStartTime = clock() / (double) CLOCKS_PER_SEC;
+  double SelectionSortStartTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
   SelectionSort(d, size);
-  double SelectionSortEndTime = clock() / (double) CLOCKS_PER_SEC;
-
-/*
-  for(int i = 0; i < size; i++)
-  {
-    cout << a[i] << ", ";
-  }
-  cout << "  TIME: " << QuickSortEndTime - QuickSortStartTime << endl;
-
-  for(int i = 0; i < size; i++)
-  {
-    cout << b[i] << ", ";
-  }
-  cout << "  TIME: " << InsertionSortEndTime - InsertionSortStartTime << endl;
-
-  for(int i = 0; i < size; i++)
-  {
-    cout << c[i] << ", ";
-  }
-  cout << "  TIME: " << BubbleSortEndTime - BubbleSortStartTime << endl;
-
-  for(int i = 0; i < size; i++)
-  {
-    cout << d[i] << ", ";
-  }
-  cout << "  TIME: " << SelectionSortEndTime - SelectionSortStartTime << endl;
-  */
+  double SelectionSortEndTime = (clock() / (double) CLOCKS_PER_SEC) * 1000;
 
   cout << endl;
   cout << "  Quick Sort" << endl;
-  cout << "     Start Time: " << QuickSortStartTime << " seconds" << endl;
-  cout << "     End Time: " << QuickSortEndTime << " seconds" << endl;
-  cout << "     Elapsed Time: " << QuickSortEndTime - QuickSortStartTime << " seconds" << endl;
+  cout << "     Start Time: " << QuickSortStartTime << " milliseconds" << endl;
+  cout << "     End Time: " << QuickSortEndTime << " milliseconds" << endl;
+  cout << "     Elapsed Time: " << QuickSortEndTime - QuickSortStartTime << " milliseconds" << endl;
   cout << endl;
   cout << "  Insertion Sort" << endl;
-  cout << "     Start Time: " << InsertionSortStartTime << " seconds" << endl;
-  cout << "     End Time: " << InsertionSortEndTime << " seconds" << endl;
-  cout << "     Elapsed Time: " << InsertionSortEndTime - InsertionSortStartTime << " seconds" << endl;
+  cout << "     Start Time: " << InsertionSortStartTime << " milliseconds" << endl;
+  cout << "     End Time: " << InsertionSortEndTime << " milliseconds" << endl;
+  cout << "     Elapsed Time: " << InsertionSortEndTime - InsertionSortStartTime << " milliseconds" << endl;
   cout << endl;
   cout << "  Bubble Sort" << endl;
-  cout << "     Start Time: " << BubbleSortStartTime << " seconds" << endl;
-  cout << "     End Time: " << BubbleSortEndTime << " seconds" << endl;
-  cout << "     Elapsed Time: " << BubbleSortEndTime - BubbleSortStartTime << " seconds" << endl;
+  cout << "     Start Time: " << BubbleSortStartTime << " milliseconds" << endl;
+  cout << "     End Time: " << BubbleSortEndTime << " milliseconds" << endl;
+  cout << "     Elapsed Time: " << BubbleSortEndTime - BubbleSortStartTime << " milliseconds" << endl;
   cout << endl;
   cout << "  Selection Sort" << endl;
-  cout << "     Start Time: " << SelectionSortStartTime << " seconds" << endl;
-  cout << "     End Time: " << SelectionSortEndTime << " seconds" << endl;
-  cout << "     Elapsed Time: " << SelectionSortEndTime - SelectionSortStartTime << " seconds" << endl;
+  cout << "     Start Time: " << SelectionSortStartTime << " milliseconds" << endl;
+  cout << "     End Time: " << SelectionSortEndTime << " milliseconds" << endl;
+  cout << "     Elapsed Time: " << SelectionSortEndTime - SelectionSortStartTime << " milliseconds" << endl;
   cout << endl;
 }
